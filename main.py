@@ -60,7 +60,15 @@ data = {
 }
 
 df = pd.DataFrame(data)
+# -----------------------------
+# Data Validation
+# -----------------------------
 
+print("\nMissing Values:")
+print(df.isnull().sum())
+
+print("\nDuplicate Product IDs:")
+print(df["Product_ID"].duplicated().sum())
 # -----------------------------
 # 2. Display Data
 # -----------------------------
