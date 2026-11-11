@@ -175,7 +175,7 @@ axes[0].set_xlabel("Product Name")
 axes[0].set_ylabel("Sales Count")
 axes[0].tick_params(axis="x", rotation=45)
 axes[0].grid(axis="y", linestyle="--", alpha=0.5)
-
+axes[0].bar_label(axes[0].containers[0])
 # -----------------------------
 # Chart 2: Pie Chart
 # -----------------------------
